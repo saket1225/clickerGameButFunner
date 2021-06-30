@@ -1,0 +1,61 @@
+<!-- {%load static%} -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time TO Break Our Mouse</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="Dark logo(1).svg" type="image/icon type">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+
+</head>
+<body>
+
+    <div class="content">
+        <center><h1 class="level">Level <span class="levelNum">1</span></h1></center>
+        <center><h1 class="count">0</h1></center>
+        <button class="clicker">Click Me</button>
+        <button class="confettiClicker"></button>
+
+        <h1 class="clicksLeft">Clicks Left: <span class="clicksLeftNum">100</span></h1>
+        <h1 class="timer"><span class="mins">0</span>:<span class="secLeft">30</span></h1>
+    </div>
+
+    <center>
+        <div class="loadingEffect" style="display: none;">
+            <h1 class="cleared">Level <span class="levelNum">1</span> cleared</h1>
+            <h3 class="appreciation">Appreciable. You dare clear the next level.</h3>
+            <h3 class="loading">Loading</h3>
+        </div>
+    </center>
+
+
+    <center>
+        <div class="endingScreen" style="display: none;">
+            <h1 class="brokeYourMouse">Unfortuntly I broke your mouse. <span class="ignoreTypo">(Ignore Typo)</span></h1>
+            <h1 class="playAgain">Wanna break your mouse again?</h1>
+            <a href="./index.html"><button class="reset">Restart?</button></a>
+        </div>
+    </center>
+
+    <center>
+        <div class="gameOver" style="display: none;">
+            <h1 class="brokeYourMouse">Unfortunatly You Didn't broke Your Mouse</h1>
+            <h1 class="playAgain">Wanna break your mouse</h1>
+            <a href="./index.html"><button class="reset">Restart?</button></a>
+        </div>
+    </center>
+
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

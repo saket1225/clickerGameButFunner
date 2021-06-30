@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #010101;
+}
+
+.level{
+    color: #909090;
+    font-family: Montserrat;
+    font-weight: 200;
+    margin-top: 2.5rem;
+}
+
+.count{
+    position: relative;
+    transform: translateY(-50%);
+    margin-top: 15%;
+    color: #f0f0f0;
+    font-family: Montserrat;
+    font-size: 10rem;
+    font-weight: 400;
+}
+
+.clicker{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 68%;
+    left: 50%;
+    width: 20rem;
+    height: 3.2rem;
+    font-size: 1.3rem;
+    border-radius: 0.1rem;
+    border: none;
+    outline: none;
+    background: rgba(165, 165, 165, 0.20);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s all;
+    user-select: none;
+}
+
+.clicker:hover{
+    background: rgba(165, 165, 165, 0.30);
+}
+
+.clicker:active{
+    background: rgba(165, 165, 165, 0.10);
+}
+
+#party-js-container{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100vw !important;
+    height:100% !important;
+}
+
+.confettiClicker{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 68%;
+    left: 50%;
+    user-select: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.clicksLeft{
+    position: absolute;
+    color: #f9f9f9f9;
+    font-family: Montserrat;
+    font-weight: 300;
+    top: 2.5rem;
+    margin-left: 3rem;
+    font-size: 1.2rem !important;
+}
+
+.clicksLeftNum{
+    font-weight: 500;
+    color: #f0f0f0;
+    padding-left: 0.2rem;
+}
+
+.timer{
+    position: absolute;
+    top: 2rem;
+    right: 3.5rem;
+    font-family: Montserrat;
+    font-weight: 300;
+    color: #f0f0f0;
+}
+
+/*loading effect*/
+.loadingEffect{
+    position: relative;
+    margin-top: 18%;
+}
+
+.cleared{
+    font-family: Montserrat;
+    font-weight: 300;
+    color: #f0f0f0;
+}
+
+.appreciation{
+    margin-top: 1rem;
+    font-family: Montserrat;
+    font-weight: 200;
+    color: #ABABAB;
+}
+
+.loading{
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    font-family: Montserrat;
+    font-weight: 200;
+    color: #ABABAB;
+}
+
+/*ending screen*/
+.brokeYourMouse{
+    margin-top: 13rem;
+    font-family: Montserrat;
+    font-weight: 300;
+    color: #EBEBEB;
+}
+
+.ignoreTypo{
+    font-weight: 100;
+}
+
+.playAgain{
+    margin-top: 3rem;
+    font-family: Montserrat;
+    font-weight: 200;
+    font-size: 1.2rem;
+    color: #EBEBEB;
+}
+
+.reset{
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.3rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.reset:hover{
+    background: rgba(255, 255, 255, 0.2);
+}
